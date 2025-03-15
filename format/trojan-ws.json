@@ -1,0 +1,40 @@
+{
+    "mux": {
+        "concurrency": -1,
+        "enabled": false
+    },
+    "protocol": "trojan",
+    "settings": {
+        "servers": [
+            {
+                "address": "ava.game.naver.com",
+                "level": 8,
+                "ota": false,
+                "password": "710161b338e65e3b",
+                "port": 443
+            }
+        ]
+    },
+    "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+            "allowInsecure": true,
+            "alpn": [
+                "h3",
+                "h2",
+                "http/1.1"
+            ],
+            "fingerprint": "chrome",
+            "serverName": "ava.game.naver.com.atp.sing-box.space",
+            "show": false
+        },
+        "wsSettings": {
+            "headers": {
+                "Host": "ava.game.naver.com.atp.sing-box.space"
+            },
+            "path": "/hhhhh/buy-trojan-ws-pm-telegram-at-synricha"
+        }
+    },
+    "tag": "VVIP"
+}

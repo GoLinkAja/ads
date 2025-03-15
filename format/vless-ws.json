@@ -1,0 +1,44 @@
+{
+    "mux": {
+        "concurrency": -1,
+        "enabled": false
+    },
+    "protocol": "vless",
+    "settings": {
+        "vnext": [
+            {
+                "address": "ava.game.naver.com",
+                "port": 443,
+                "users": [
+                    {
+                        "encryption": "none",
+                        "id": "e1484c51-4e84-4905-95fb-37fcf5ba3231",
+                        "level": 8
+                    }
+                ]
+            }
+        ]
+    },
+    "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+            "allowInsecure": true,
+            "alpn": [
+                "h3",
+                "h2",
+                "http/1.1"
+            ],
+            "fingerprint": "chrome",
+            "serverName": "ava.game.naver.com.vless.ardi45.web.id",
+            "show": false
+        },
+        "wsSettings": {
+            "headers": {
+                "Host": "ava.game.naver.com.vless.ardi45.web.id"
+            },
+            "path": "/35.219.50.99:443"
+        }
+    },
+    "tag": "proxy"
+}
