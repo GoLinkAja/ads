@@ -86,7 +86,7 @@ proxy-groups:
 proxy-providers:
   VlessCF:
     type: http
-    url: https://api2.ardi45.web.id/sub?cc={cc}&format=clash-provider&limit={limit}&bug={bug}&wc={wc}&bug-wc={bwc}
+    url: https://api2.ardi45.web.id/sub?cc={cc}&format=clash-provider&limit={limit}&bug={bug}&wc={wc}&wc-bug={bwc}
     path: ./subscription.yaml
     health-check:
       enable: true
