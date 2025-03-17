@@ -21,7 +21,7 @@ dns:
   ipv6: false
   default-nameserver:
     - 8.8.8.8
-    - 1.1.1.1
+    - '1.1.1.1#Tunnel'
     - 223.5.5.5
     - 1.12.12.12
     - 9.9.9.9
@@ -34,7 +34,7 @@ dns:
     - '*.lan'
   nameserver:
     - dns.google
-    - one.one.one.one
+    - 'one.one.one.one#Tunnel'
     - dns.alidns.com
     - dot.pub
     - dns.quad9.net
