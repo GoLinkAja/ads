@@ -18,20 +18,27 @@ external-ui: ./dashboard
 
 dns:
   enable: true
-  cache-algorithm: arc
   ipv6: false
-  listen: 0.0.0.0:1053
-  nameserver:
-    - 'tls://dns.google#Tunnel'
   default-nameserver:
-    - '8.8.8.8'
-    - '8.8.4.4'
-  proxy-server-nameserver:
-    # isi dgn dns lokal, contoh xl
-    - '112.215.198.254'
-    - '112.215.198.248'
-  enhanced-mode: fake-ip # atau redir-host
+    - 8.8.8.8
+    - 1.1.1.1
+    - 223.5.5.5
+    - 1.12.12.12
+    - 9.9.9.9
+    - 77.88.8.8
+  listen: 0.0.0.0:1053
+  use-hosts: true
+  enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - '*.lan'
+  nameserver:
+    - dns.google
+    - one.one.one.one
+    - dns.alidns.com
+    - dot.pub
+    - dns.quad9.net
+    - common.dot.dns.yandex.net
 
 proxies:
   - name: "test"
